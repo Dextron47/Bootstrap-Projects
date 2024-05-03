@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneaker Shippers.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-sm-top">
+    <div class="container-fluid">
+      <img src="img/sneakers_img-removebg-preview.png" alt="logo" height="110" width="120">
+      <a class="navbar-brand" href="index.html">Sneaker Shippers.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us!</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Collections
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mens_collection.html">Men </a></li>
+              <li><a class="dropdown-item" href="women_collection.html">Women</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#newarrivals"
+                  aria-controls="offcanvasBottom">New Arrivals!</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">#team_SS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-box-arrow-in-right"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
+            <li><button class="dropdown-item " type="button" data-bs-toggle="modal" data-bs-target="#signup">Sign
+                Up</button></li>
+            <li><button class="dropdown-item disabled" type="button">Already have an Account?</button></li>
+            <li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#login">
+                <a href="#">Login Here</button></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- modal Signup starts -->
+
+  <div class="modal fade" id="signup">
+    <div class="modal-dialog modal-dialog-centered rounded-4 ">
+      <div class="modal-content border border-3 border-secondary">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-white">Sign up here!</h1>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="m-1">
+              <label class="form-label">Email : </label>
+              <input class="form-control" type="email" />
+            </div>
+            <div class="m-1">
+              <label class="form-label">User Name : </label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="m-1">
+              <label class="form-label">Password : </label>
+              <input class="form-control" type="password" />
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modal signup ends -->
+
+  <!-- modal login starts -->
+
+  <div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered rounded-4 ">
+      <div class="modal-content border border-3 border-secondary">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-white">Login</h1>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="m-1">
+              <label class="form-label">User Name : </label>
+              <input class="form-control" type="text" />
+            </div>
+            
+            <div class="m-1">
+              <label class="form-label">Password : </label>
+              <input class="form-control" type="password" />
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modal login ends -->
+
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-sm-4 border border-2 border-dark">
+      </div>
+      <div class="col-sm-4 border border-2 border-dark">
+      </div>
+      <div class="col-sm-4 border border-2 border-dark">
+      </div>
+    </div>
+  </div>
+  <div>
+    <hr class="border border-danger border-2 opacity-50">
+  </div>
+
+  <!-- center section contact-us starts -->
+
+
+
+  <div class="container-fluid border border-0 border-danger img-fluid">
+    <div class="row">
+      <div class="col-sm-6 border border-0 border-danger">
+        <div class="map_section container-fluid map-fluid">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3762.122221228089!2d72.79443157506184!3d19.450296581832927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1714595192680!5m2!1sen!2sin"
+            width="600" height="500" style=" border: solid 3px rgb(104, 43, 43); border-radius: 30px; margin: 20px;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-5 border border-2 border-secondary p-5 " height="600" width="500">
+        <h4 class="pb-4 pt-2">Contact Us!</h4>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mr. Sneaker Shipper">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- center section contact-us ends -->
+
+
+
+  <!-- new arrival offcanvas start -->
+
+  <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#newarrivals" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
+
+  <div class="offcanvas offcanvas-bottom  h-auto" tabindex="-1" id="newarrivals" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">New Arrivals!</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <div class="container-fluid border border-0 border-warning">
+        <div class="row card-group">
+
+          <div class="col-sm-3 border border-0 border-warning">
+            <div class="card">
+              <img src="img/center-img-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$199</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos, velit suscipit
+                  at consequatur dolorum cupiditate voluptatum tempore natus quidem soluta aperiam fugit iste aut quo
+                  accusantium veritatis eveniet nobis.</p>
+              </div>
+              <div class="p-2">
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Buy Nows</button>
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-3 border border-0 border-warning">
+            <div class="card">
+              <img src="img/center-img-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$199</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos, velit suscipit
+                  at consequatur dolorum cupiditate voluptatum tempore natus quidem soluta aperiam fugit iste aut quo
+                  accusantium veritatis eveniet nobis.</p>
+              </div>
+              <div class="p-2">
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Buy Nows</button>
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 border border-0 border-warning">
+            <div class="card">
+              <img src="img/center-img-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$199</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos, velit suscipit
+                  at consequatur dolorum cupiditate voluptatum tempore natus quidem soluta aperiam fugit iste aut quo
+                  accusantium veritatis eveniet nobis.</p>
+              </div>
+              <div class="p-2">
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Buy Nows</button>
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-3 border border-0 border-warning">
+            <div class="card">
+              <img src="img/center-img-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$199</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos, velit suscipit
+                  at consequatur dolorum cupiditate voluptatum tempore natus quidem soluta aperiam fugit iste aut quo
+                  accusantium veritatis eveniet nobis.</p>
+              </div>
+              <div class="p-2">
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Buy Nows</button>
+                <button class="btn btn-warning-end  bg-dark text-light" data-bs-toggle="offcanvas"
+                  data-bs-target="#shop">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- new arrival offcanvas ends -->
+
+
+
+
+  <!-- footer section start -->
+  <footer class="footer">
+
+    &copy; copyright @ 2023 by <span>Mr. Sneaker Shippers.</span> | All rights reserved!
+
+  </footer>
+  <!-- footer section ends -->
+
+</body>
+
+</html>

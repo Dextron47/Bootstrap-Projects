@@ -1,0 +1,43 @@
+.image-center {
+    background-color: rgb(152, 148, 148);
+  }
+  
+  .center-para {
+    background-color: rgb(152, 148, 148);
+  }
+  
+  .product-section {
+    background-color: rgb(233, 228, 228);
+  }
+  
+  .footer {
+    background-color: black;
+    border-top: var(--border);
+    /* position: sticky; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
+    color: white;
+    margin-top: 1rem;
+    z-index: 1000;
+    /* padding-bottom: 9.5rem; */
+  }
+  
+  .footer span {
+    color: var(--main-color);
+  }
+  
+  .women-collection {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(152, 148, 148);
+  }
+  
+  .map_section {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
